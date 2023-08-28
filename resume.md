@@ -26,3 +26,29 @@ Increased organisational ownership | alignment
 
 If one microservices break, other will continue run.
 *Scalable* -> only scale the services you need
+
+#### No Beneficios
+Microservicios es dificultuoso en implementar
+Puede resultar en analisis de paralisis
+Need strong domain knowledge
+
+
+Monoliths -> can use CI/CD, daily deployes, small changes, simple to implement
+
+
+## The platform services
+Funciont as an Asset Register
+Track all the platforms / system in company
+Built by the infrastructure Team : engineering, accounting, techinical support, procurement
+
+
+### The command services
+Function as a repository of command line augment for given platofrms
+Aid in the automation of support process
+Built by the Techinal support
+
+
+### Solution Architecture - Project
+
+![Descripción de la imagen](/images_resumen/solution_architecturue.png)
+
