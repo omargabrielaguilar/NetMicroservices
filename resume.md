@@ -49,6 +49,9 @@ Built by the Techinal support
 
 
 ### Solution Architecture - Project
+![](/resume/solution_architecturue.png)
 
-![Descripción de la imagen](/images_resumen/solution_architecturue.png)
+### Plaftorm Service Architecture
+![](/resume/platform_architecture.png)
 
+ 
