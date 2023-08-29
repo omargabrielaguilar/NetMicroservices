@@ -17,19 +17,19 @@ namespace PlatformService.Data
 
         private static void SeedData(AppDbContext context)
         {
+            //Clase que nos permite "test" para enviar datos desde consola, pero solo como test", igual ya habrá una interfaz para el trabajo
             if(!context.Platforms.Any())
             {
                 Console.WriteLine("---> Enviando data"); //Seeding data
 
                 context.Platforms.AddRange(
-                    new Platform()
-                    {
-                        Name = "DotNet",
-                        Publisher = "Microsoft",
-                        Cost = "Free"
-                    }
+                    new Platform() { Name = "DotNet", Publisher = "Microsoft", Cost = "Free" },
+                    new Platform() { Name = "Laravel", Publisher = "TylorOtwell", Cost = "Free" },
+                    new Platform() { Name = "Angular", Publisher = "Google", Cost = "Free" }
                 );
 
+
+                context.SaveChanges();
             }
             else
             {
