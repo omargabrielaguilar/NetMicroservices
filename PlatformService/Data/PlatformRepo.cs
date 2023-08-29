@@ -37,8 +37,6 @@ namespace PlatformService.Data
             return _context.Platforms.FirstOrDefault(p => p.Id == id);
         }
 
-
-
         //SaveChanges() en Entity Framework Core se utiliza para guardar los cambios realizados en las entidades que se han agregado, actualizado o eliminado en la base de datos
         public bool SaveChanges()
         {
