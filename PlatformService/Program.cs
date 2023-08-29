@@ -18,6 +18,9 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 //configuración con la inyección de dependencia
 builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 
+//Dtos
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 
 var app = builder.Build();
 
