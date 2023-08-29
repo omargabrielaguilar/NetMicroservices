@@ -15,7 +15,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(opt =>
     opt.UseInMemoryDatabase("InMem"));
 
-
+//configuración con la inyección de dependencia
+builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 
 
 var app = builder.Build();
@@ -34,3 +35,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+PrepDb.PrepPopulation(app);

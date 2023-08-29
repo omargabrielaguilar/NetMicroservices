@@ -1,6 +1,4 @@
 ﻿using PlatformService.Models;
-using System.Collections.Generic; //seems not using in net7 as a librery(bibliotecas)
-using System.Linq;
 
 namespace PlatformService.Data
 {
