@@ -3974,19 +3974,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\omare\\.nuget\\packages\\": {}
+    "C:\\Users\\omare\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\.NetMicroservices\\PlatformService\\PlatformService.csproj",
+      "projectUniqueName": "F:\\.NetMicroservices\\PlatformService\\PlatformService.csproj",
       "projectName": "PlatformService",
-      "projectPath": "D:\\.NetMicroservices\\PlatformService\\PlatformService.csproj",
+      "projectPath": "F:\\.NetMicroservices\\PlatformService\\PlatformService.csproj",
       "packagesPath": "C:\\Users\\omare\\.nuget\\packages\\",
-      "outputPath": "D:\\.NetMicroservices\\PlatformService\\obj\\",
+      "outputPath": "F:\\.NetMicroservices\\PlatformService\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\omare\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
