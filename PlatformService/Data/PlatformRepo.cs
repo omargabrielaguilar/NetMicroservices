@@ -18,17 +18,19 @@ namespace PlatformService.Data
 
         public void CreatePlatform(Platform plat)
         {
-            throw new NotImplementedException();
-        }
+            if (plat == null)
+            {
+                throw new ArgumentNullException(nameof(plat));
+            }
 
+            _context.Platforms.Add(plat);
+        }
 
 
         public IEnumerable<Platform> GetAllPlatforms()
         {
             return _context.Platforms.ToList(); 
         }
-
-
 
 
         public Platform GetPlatformById(int id)
