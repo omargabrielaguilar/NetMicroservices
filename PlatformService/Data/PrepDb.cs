@@ -21,9 +21,11 @@ namespace PlatformService.Data
 
                 context.Platforms.AddRange(
                     new Platform(){Name="Laravel", Publisher="Tylor Otwell", Cost="Free"},
-                    new Platform(){Name="Laravel", Publisher="Tylor Otwell", Cost="Free"},
-                    new Platform(){Name="Laravel", Publisher="Tylor Otwell", Cost="Free"}
+                    new Platform(){Name="Kubernetes", Publisher="Cloud Native Computing Foundation", Cost="Free"},
+                    new Platform(){Name="Ruby on Rails", Publisher="DHH", Cost="Free"}
                 );
+
+                context.SaveChanges();
 
             }
             else
