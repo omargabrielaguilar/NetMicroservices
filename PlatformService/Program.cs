@@ -12,6 +12,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(opt => 
     opt.UseInMemoryDatabase("InMem"));
 
+builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -43,9 +45,14 @@ app.MapGet("/weatherforecast", () =>
 .WithName("GetWeatherForecast")
 .WithOpenApi();
 
+
+PrepDB.PrepPopulation(app);
+
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }
+
+
