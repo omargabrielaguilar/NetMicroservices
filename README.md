@@ -58,3 +58,11 @@ Built by the Techinal support
 ## Docker
 **Containerization** platform. Enable package my app into images and run them as "containers" on any platform that can run docke
  
+## Kubernetes
+Cluster -> Node   (Hardware(pc),  O.S(Arch linxu), Container Runtime(Docker), Kubernetes)   | Pod = Platform service container
+
+Conectados gracias a un cluster IP   -   y un NodePort
+
+
+imperative -> command lines
+declarative -> config files
