@@ -54,4 +54,7 @@ Built by the Techinal support
 ### Plaftorm Service Architecture
 ![](/resume/platform_architecture.png)
 
+
+## Docker
+**Containerization** platform. Enable package my app into images and run them as "containers" on any platform that can run docke
  
